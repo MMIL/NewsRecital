@@ -39,3 +39,6 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
+
+#api key
+C:\Users\StreamerX\Desktop\news_retic\NewsRecital\lib\Utilites\ApiKey.dart
