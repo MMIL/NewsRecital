@@ -41,4 +41,4 @@ app.*.symbols
 app.*.map.json
 
 #api key
-C:\Users\StreamerX\Desktop\news_retic\NewsRecital\lib\Utilites\ApiKey.dart
+lib/Utilites/ApiKey.dart
