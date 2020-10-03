@@ -14,7 +14,7 @@ class Bussiness extends StatefulWidget {
 class _BussinessState extends State<Bussiness> {
   int index;
   var url =
-      "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=$apikey";
+      "https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=30&apiKey=$apikey";
   var data;
 
   Future<String> getJsonData(url) async {
@@ -121,18 +121,19 @@ class _BussinessState extends State<Bussiness> {
                                                             data[index]
                                                                 ['publishedAt'],
                                                         style: TextStyle(
-                                                          fontSize: 13.5,
+                                                          fontSize: 14,
                                                         ),
                                                       )),
                                             (data[index]['source']['name'] ==
                                                     null)
                                                 ? CircularProgressIndicator()
                                                 : Text(
-                                                    data[index]['source']
-                                                        ['name'],
+                                                    " " +
+                                                        data[index]['source']
+                                                            ['name'],
                                                     style: TextStyle(
-                                                      color: Colors.grey,
-                                                      fontSize: 13.5,
+                                                      color: Colors.black54,
+                                                      fontSize: 14,
                                                     ),
                                                   )
                                           ],

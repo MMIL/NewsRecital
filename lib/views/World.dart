@@ -6,15 +6,15 @@ import 'package:news_retic/Utilites/ApiKey.dart';
 
 import '../Screens/Details.dart';
 
-class Science extends StatefulWidget {
+class World extends StatefulWidget {
   @override
-  _ScienceState createState() => _ScienceState();
+  _WorldState createState() => _WorldState();
 }
 
-class _ScienceState extends State<Science> {
+class _WorldState extends State<World> {
   int index;
   var url =
-      "https://newsapi.org/v2/top-headlines?country=in&category=science&pageSize=30&apiKey=$apikey";
+      "https://newsapi.org/v2/top-headlines?country=us&pageSize=30&apiKey=$apikey";
   var data;
 
   Future<String> getJsonData(url) async {
@@ -26,7 +26,6 @@ class _ScienceState extends State<Science> {
       var convertdata = json.decode(responce.body);
       data = convertdata['articles'];
     });
-    debugPrint(responce.body);
   }
 
   @override
@@ -122,7 +121,7 @@ class _ScienceState extends State<Science> {
                                                             data[index]
                                                                 ['publishedAt'],
                                                         style: TextStyle(
-                                                          fontSize: 13.5,
+                                                          fontSize: 14,
                                                         ),
                                                       )),
                                             (data[index]['source']['name'] ==
@@ -133,8 +132,8 @@ class _ScienceState extends State<Science> {
                                                         data[index]['source']
                                                             ['name'],
                                                     style: TextStyle(
-                                                      color: Colors.grey,
-                                                      fontSize: 13.5,
+                                                      color: Colors.black54,
+                                                      fontSize: 14,
                                                     ),
                                                   )
                                           ],
