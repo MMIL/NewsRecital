@@ -14,7 +14,7 @@ class Technology extends StatefulWidget {
 class _TechnologyState extends State<Technology> {
   int index;
   var url =
-      "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=$apikey";
+      "https://newsapi.org/v2/top-headlines?country=in&category=technology&pageSize=30&apiKey=$apikey";
   var data;
 
   Future<String> getJsonData(url) async {

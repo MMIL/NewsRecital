@@ -74,7 +74,11 @@ class _DetailsState extends State<Details> {
                                     Share.share(dataPage[indexPage]['url']);
                                   });
                                 },
-                                icon: Icon(Icons.share, color: Colors.white),
+                                icon: Icon(
+                                  Icons.share,
+                                  color: Colors.white,
+                                  size: 30,
+                                ),
                               ),
                             ),
                           ),
@@ -89,13 +93,25 @@ class _DetailsState extends State<Details> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          dataPage[indexPage]['source']['name'],
-                          style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
-                                letterSpacing: .5,
-                                fontSize: 22.0,
-                                fontWeight: FontWeight.w600),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 20),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                dataPage[indexPage]['source']['name'],
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      letterSpacing: .5,
+                                      fontSize: 22.0,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ),
+                              Icon(
+                                Icons.play_circle_fill_outlined,
+                                size: 35,
+                              )
+                            ],
                           ),
                         ),
                         SizedBox(

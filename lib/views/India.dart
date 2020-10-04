@@ -6,14 +6,14 @@ import 'package:news_retic/Utilites/ApiKey.dart';
 
 import '../Screens/Details.dart';
 
-class Explore extends StatefulWidget {
+class India extends StatefulWidget {
   @override
-  _ExploreState createState() => _ExploreState();
+  _IndiaState createState() => _IndiaState();
 }
 
-class _ExploreState extends State<Explore> {
+class _IndiaState extends State<India> {
   int index;
-  var url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=$apikey";
+  var url = "https://newsapi.org/v2/top-headlines?country=in&pageSize=30&apiKey=$apikey";
   var data;
 
   Future<String> getJsonData(url) async {
@@ -128,8 +128,9 @@ class _ExploreState extends State<Explore> {
                                                     null)
                                                 ? CircularProgressIndicator()
                                                 : Text(
-                                                    data[index]['source']
-                                                        ['name'],
+                                                    " " +
+                                                        data[index]['source']
+                                                            ['name'],
                                                     style: TextStyle(
                                                       color: Colors.grey,
                                                       fontSize: 13.5,

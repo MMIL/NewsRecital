@@ -2,9 +2,10 @@ import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
+import 'package:news_retic/views/World.dart';
 import '../views/Bussiness.dart';
 import '../views/Entertainment.dart';
-import '../views/Explore.dart';
+import '../views/India.dart';
 import '../views/Health.dart';
 import '../views/Science.dart';
 import '../views/Sports.dart';
@@ -22,7 +23,7 @@ class _HomePageState extends State<HomePage>
   int index;
   @override
   void initState() {
-    controller = new TabController(length: 7, vsync: this);
+    controller = new TabController(length: 8, vsync: this);
     super.initState();
   }
 
@@ -50,6 +51,7 @@ class _HomePageState extends State<HomePage>
             indicatorSize: TabBarIndicatorSize.label,
             tabs: <Widget>[
               Tab(text: "Explore"),
+              Tab(text: "World"),
               Tab(text: "Business"),
               Tab(text: "Entertainment"),
               Tab(text: "Technology"),
@@ -62,7 +64,8 @@ class _HomePageState extends State<HomePage>
         body: TabBarView(
           controller: controller,
           children: <Widget>[
-            Explore(),
+            India(),
+            World(),
             Bussiness(),
             Entertainment(),
             Technology(),
@@ -100,7 +103,7 @@ class WidgetTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 14.0),
         child: Container(
           child: RichText(
             text: TextSpan(
@@ -110,7 +113,7 @@ class WidgetTitle extends StatelessWidget {
                   style: GoogleFonts.poppins(
                     textStyle: TextStyle(
                         letterSpacing: .5,
-                        fontSize: 16.0,
+                        fontSize: 20.0,
                         color: Colors.black,
                         fontWeight: FontWeight.w500),
                   ),

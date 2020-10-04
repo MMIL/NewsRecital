@@ -14,7 +14,7 @@ class Sports extends StatefulWidget {
 class _SportsState extends State<Sports> {
   int index;
   var url =
-      "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=$apikey";
+      "https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=30&apiKey=$apikey";
   var data;
 
   Future<String> getJsonData(url) async {
@@ -129,7 +129,7 @@ class _SportsState extends State<Sports> {
                                                     null)
                                                 ? CircularProgressIndicator()
                                                 : Text(
-                                                    data[index]['source']
+                                              " "+  data[index]['source']
                                                         ['name'],
                                                     style: TextStyle(
                                                       color: Colors.grey,
