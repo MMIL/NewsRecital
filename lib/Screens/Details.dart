@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 import 'ArticleViews.dart';
 
 class Details extends StatefulWidget {
@@ -100,7 +99,7 @@ class _DetailsState extends State<Details> {
                             children: [
                               Text(
                                 dataPage[indexPage]['source']['name'],
-                                style: GoogleFonts.poppins(
+                                style: GoogleFonts.merriweather(
                                   textStyle: TextStyle(
                                       letterSpacing: .5,
                                       fontSize: 22.0,
@@ -132,9 +131,9 @@ class _DetailsState extends State<Details> {
                                       horizontal: 10, vertical: 6),
                                   child: Text(
                                     dataPage[indexPage]['title'],
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.merriweather(
                                       textStyle: TextStyle(
-                                          letterSpacing: .5,
+                                          letterSpacing: .4,
                                           fontSize: 18.0,
                                           fontWeight: FontWeight.w500),
                                     ),
@@ -152,7 +151,7 @@ class _DetailsState extends State<Details> {
                           ? Text("NewsRetical")
                           : Text(
                               dataPage[indexPage]['content'],
-                              style: GoogleFonts.poppins(
+                              style: GoogleFonts.merriweather(
                                 textStyle: TextStyle(
                                     letterSpacing: .5,
                                     fontSize: 15.0,
@@ -164,7 +163,7 @@ class _DetailsState extends State<Details> {
                   MaterialButton(
                     height: MediaQuery.of(context).size.height * 0.05,
                     minWidth: MediaQuery.of(context).size.width * 0.80,
-                    color: Colors.blueAccent,
+                    color: Colors.deepPurple,
                     onPressed: () {
                       Navigator.push(
                           context,
