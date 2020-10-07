@@ -26,13 +26,13 @@ class _ArticleViewState extends State<ArticleView> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Colors.deepPurpleAccent,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "NewsX",
-                style: GoogleFonts.poppins(
+                "NewsRetical",
+                style: GoogleFonts.merriweather(
                   textStyle: TextStyle(
                       letterSpacing: .5,
                       fontSize: 18.0,

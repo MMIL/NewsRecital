@@ -88,9 +88,9 @@ class _ScienceState extends State<Science> {
                                           data[index]['title'] == null
                                               ? 'Breaking News'
                                               : data[index]['title'],
-                                          style: GoogleFonts.poppins(
+                                          style: GoogleFonts.merriweather(
                                             textStyle: TextStyle(
-                                                letterSpacing: .5,
+                                                letterSpacing: .4,
                                                 fontSize: 18.0,
                                                 fontWeight: FontWeight.w600),
                                           ),
@@ -99,10 +99,10 @@ class _ScienceState extends State<Science> {
                                           data[index]['description'] == null
                                               ? ''
                                               : data[index]['description'],
-                                          style: GoogleFonts.poppins(
+                                          style: GoogleFonts.merriweather(
                                             textStyle: TextStyle(
-                                                letterSpacing: .5,
-                                                fontSize: 15.0,
+                                                letterSpacing: .2,
+                                                fontSize: 14.0,
                                                 fontWeight: FontWeight.w400),
                                           ),
                                         ),

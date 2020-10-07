@@ -13,7 +13,8 @@ class India extends StatefulWidget {
 
 class _IndiaState extends State<India> {
   int index;
-  var url = "https://newsapi.org/v2/top-headlines?country=in&pageSize=30&apiKey=$apikey";
+  var url =
+      "https://newsapi.org/v2/top-headlines?country=in&pageSize=30&apiKey=$apikey";
   var data;
 
   Future<String> getJsonData(url) async {
@@ -87,9 +88,9 @@ class _IndiaState extends State<India> {
                                           data[index]['title'] == null
                                               ? 'Breaking News'
                                               : data[index]['title'],
-                                          style: GoogleFonts.poppins(
+                                          style: GoogleFonts.merriweather(
                                             textStyle: TextStyle(
-                                                letterSpacing: .5,
+                                                letterSpacing: .4,
                                                 fontSize: 18.0,
                                                 fontWeight: FontWeight.w600),
                                           ),
@@ -98,10 +99,10 @@ class _IndiaState extends State<India> {
                                           data[index]['description'] == null
                                               ? ''
                                               : data[index]['description'],
-                                          style: GoogleFonts.poppins(
+                                          style: GoogleFonts.merriweatherSans(
                                             textStyle: TextStyle(
-                                                letterSpacing: .5,
-                                                fontSize: 15.0,
+                                                letterSpacing: .2,
+                                                fontSize: 14.0,
                                                 fontWeight: FontWeight.w400),
                                           ),
                                         ),

@@ -2,14 +2,14 @@ import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
+import 'package:news_retic/views/Bussiness.dart';
+import 'package:news_retic/views/Entertainment.dart';
+import 'package:news_retic/views/Health.dart';
+import 'package:news_retic/views/India.dart';
+import 'package:news_retic/views/Science.dart';
+import 'package:news_retic/views/Sports.dart';
+import 'package:news_retic/views/Technology.dart';
 import 'package:news_retic/views/World.dart';
-import '../views/Bussiness.dart';
-import '../views/Entertainment.dart';
-import '../views/India.dart';
-import '../views/Health.dart';
-import '../views/Science.dart';
-import '../views/Sports.dart';
-import '../views/Technology.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -19,6 +19,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   TabController controller;
+  void changeBrightness() {
+    DynamicTheme.of(context).setBrightness(
+        Theme.of(context).brightness == Brightness.dark
+            ? Brightness.light
+            : Brightness.dark);
+  }
 
   int index;
   @override
@@ -41,14 +47,31 @@ class _HomePageState extends State<HomePage>
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               WidgetTitle(getStrToday()),
+              IconButton(
+                onPressed: () {
+                  setState(() {
+                    changeBrightness();
+                  });
+                },
+                icon: Icon(
+                  Icons.brightness_6_sharp,
+                  size: 25,
+                ),
+              ),
             ],
           ),
           elevation: 0.0,
           bottom: TabBar(
             controller: controller,
             isScrollable: true,
-            indicatorColor: Colors.black54,
+            indicatorColor: Colors.deepPurple,
             indicatorSize: TabBarIndicatorSize.label,
+            labelStyle: GoogleFonts.openSansCondensed(
+              textStyle: TextStyle(
+                  letterSpacing: .4,
+                  fontSize: 14.0,
+                  fontWeight: FontWeight.w600),
+            ),
             tabs: <Widget>[
               Tab(text: "Explore"),
               Tab(text: "World"),
@@ -103,26 +126,25 @@ class WidgetTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 14.0),
+        padding: const EdgeInsets.symmetric(horizontal: 6.0),
         child: Container(
           child: RichText(
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: 'NewsRetical\n',
-                  style: GoogleFonts.poppins(
+                  text: 'Today\'s News \n',
+                  style: GoogleFonts.lobster(
                     textStyle: TextStyle(
-                        letterSpacing: .5,
-                        fontSize: 20.0,
+                        fontSize: 24.0,
                         color: Colors.black,
                         fontWeight: FontWeight.w500),
                   ),
                 ),
                 TextSpan(
                   text: strToday,
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.lobster(
                     textStyle: TextStyle(
-                        letterSpacing: .5,
+                        // letterSpacing: .3,
                         fontSize: 14.0,
                         color: Colors.black54,
                         fontWeight: FontWeight.w500),
