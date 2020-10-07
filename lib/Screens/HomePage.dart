@@ -126,13 +126,13 @@ class WidgetTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 6.0),
         child: Container(
           child: RichText(
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: 'Today News \n',
+                  text: 'Today\'s News \n',
                   style: GoogleFonts.lobster(
                     textStyle: TextStyle(
                         fontSize: 24.0,
