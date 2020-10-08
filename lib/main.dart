@@ -1,6 +1,7 @@
 import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:news_retic/Screens/HomePage.dart';
+import 'package:news_retic/Screens/splashScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,7 +36,7 @@ class _MyAppState extends State<MyApp> {
           return new MaterialApp(
               theme: theme,
               debugShowCheckedModeBanner: false,
-              home: HomePage());
+              home: SplashScreen());
         });
   }
 }
