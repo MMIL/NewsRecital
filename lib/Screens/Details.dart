@@ -23,7 +23,7 @@ class _DetailsState extends State<Details> {
     await flutterTts.setLanguage("hi-IN");
     await flutterTts.setSpeechRate(1.0);
     await flutterTts.setPitch(1.0);
-    await flutterTts.speak(dataPage[indexPage]['content']);
+    await flutterTts.speak(dataPage[indexPage]['title']);
   }
 
   Future<bool> _stopback() async {
@@ -167,12 +167,12 @@ class _DetailsState extends State<Details> {
                       child: Padding(
                         padding: const EdgeInsets.all(3.0),
                         child: (dataPage[indexPage]['content'] == null)
-                            ? Text("NewsRetical")
+                            ? Text("NewsRecital")
                             : Text(
                                 dataPage[indexPage]['content'],
                                 style: GoogleFonts.merriweather(
                                   textStyle: TextStyle(
-                                      letterSpacing: .5,
+                                      letterSpacing: .2,
                                       fontSize: 15.0,
                                       fontWeight: FontWeight.w400),
                                 ),

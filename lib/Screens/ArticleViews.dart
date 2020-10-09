@@ -31,7 +31,7 @@ class _ArticleViewState extends State<ArticleView> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "NewsRetical",
+                "NewsRecital",
                 style: GoogleFonts.merriweather(
                   textStyle: TextStyle(
                       letterSpacing: .5,

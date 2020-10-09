@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
-              height: 200, width: 200, child: Image.asset("asset/newicon.png")),
+              height: 180, width: 180, child: Image.asset("asset/newicon.png")),
           Center(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
                 Text(
-                  'Retical',
+                  'Recital',
                   style: GoogleFonts.poppins(
                     textStyle: TextStyle(
                         letterSpacing: .4,
