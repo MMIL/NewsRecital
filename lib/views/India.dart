@@ -24,7 +24,7 @@ class _IndiaState extends State<India> {
       var convertdata = json.decode(responce.body);
       data = convertdata['articles'];
     });
-    debugPrint(responce.body);
+    //  debugPrint(responce.body);
   }
 
   @override
@@ -36,6 +36,7 @@ class _IndiaState extends State<India> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Center(
           child: (data == null)
               ? CircularProgressIndicator()
