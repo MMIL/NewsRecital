@@ -30,14 +30,14 @@ An app that gives you the latest news from the top sources . It is built using F
 * [google_fonts](https://pub.dev/packages/google_fonts)
 
 ## Screenshot
-
+<img src="./Screenshot/NewsRecital.jpg" >
 
 ## Download App 
 <a href="https://drive.google.com/file/d/1g9cswP8B5Ru_lIE6q32YEjrp5VFnguJq/view?usp=sharing"><img src="https://playerzon.com/asset/download.png" width="200"></img></a>
 
 # Contribution Guidelines
 
-##Requirements
+## Requirements
 * Any Operating System (ie. MacOS X, Linux, Windows)
 * Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
 * A little knowledge of Dart and Flutter
