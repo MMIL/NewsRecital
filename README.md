@@ -41,8 +41,7 @@ An app that gives you the latest news from the top sources . It is built using F
 * Any Operating System (ie. MacOS X, Linux, Windows)
 * Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
 * A little knowledge of Dart and Flutter
-## Screenshot
-<img src="./Screenshots/NewsRecital.jpg" >
+
 
 Please feel free to file issues at https://github.com/MMIL/NewsRecital/issues. Flutter issues can be filed at https://github.com/flutter/flutter/issues.
 
