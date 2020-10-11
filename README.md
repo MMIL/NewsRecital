@@ -1,3 +1,4 @@
+<p> <img src="./asset/MMILft.Hacktober.jpeg" > </p>
 <h1 align="center">Welcome to News Recital 👋</h1>
 
 [![GitHub stars](https://img.shields.io/github/stars/MMIL/NewsRecital?style=social)](https://github.com/login?return_to=%2FMMIL%NewsRecital) 
