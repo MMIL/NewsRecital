@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_retic/Screens/Details.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:intl/intl.dart';
 
 class ArticleData extends StatefulWidget {
   var data;
@@ -24,6 +25,7 @@ class _ArticleDataState extends State<ArticleData> {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
+    final formatter = DateFormat('hh:mm a  •  dd MMM yyyy');
     return Padding(
       padding: EdgeInsets.all(10),
       child: ListView.builder(
@@ -99,7 +101,7 @@ class _ArticleDataState extends State<ArticleData> {
                           child: (widget.data[index]['publishedAt'] == null)
                               ? CircularProgressIndicator()
                               : Text(
-                                  "🕓 " + widget.data[index]['publishedAt'],
+                                  "🕓 " + formatter.format(DateTime.parse(widget.data[index]['publishedAt'])),
                                   style: TextStyle(
                                     fontSize: 14,
                                   ),
