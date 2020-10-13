@@ -69,7 +69,7 @@ class _DetailsState extends State<Details> {
                                 padding: const EdgeInsets.all(8.0),
                                 child: IconButton(
                                   onPressed: () {
-                                    Navigator.pop(context);
+                                    _stopback();
                                   },
                                   icon: Icon(Icons.arrow_back,
                                       color: Colors.white),
