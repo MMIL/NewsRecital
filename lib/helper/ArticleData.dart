@@ -32,23 +32,19 @@ class _ArticleDataState extends State<ArticleData> {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              mediaQuery.size.width > 700
-                  ? _launchURL(widget.data[index]['url'])
-                  : Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Details(
-                          widget.data,
-                          index,
-                        ),
-                      ),
-                    );
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Details(
+                    widget.data,
+                    index,
+                  ),
+                ),
+              );
             },
             child: Container(
               margin: EdgeInsets.only(
                 bottom: 20,
-                left: 4,
-                right: 4,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
