@@ -21,14 +21,16 @@ An app that gives you the latest news from the top sources . It is built using F
 * Go to detail news website.
 
 ## Dependencies
-* [Flutter](https://flutter.io/)
-* [News API](https://newsapi.org/)
-* [http](https://pub.dev/packages/http)
-* [Flutter InAppWebView Plugin](https://pub.dev/packages/flutter_inappwebview)
-* [Text To Speech](https://pub.dev/packages/flutter_tts)
-* [url_launcher](https://pub.dev/packages/url_launcher)
-* [dynamic_theme](https://pub.dev/packages/dynamic_theme)
-* [google_fonts](https://pub.dev/packages/google_fonts)
+<ul>
+ <li><a href="https://flutter.io/"><img src ="https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png" width="100" height="25" ></a></li>
+ <li><a href="https://newsapi.org/"><img src ="https://s3.amazonaws.com/appforest_uf/f1479799611909x580051703844219400/news_api_logo.PNG" width="100" height="50" ></a></li>
+  <li>[http](https://pub.dev/packages/http)</li>
+ <li>[Flutter InAppWebView Plugin](https://pub.dev/packages/flutter_inappwebview)</li>
+ <li>[Text To Speech](https://pub.dev/packages/flutter_tts)</li>
+ <li>[url_launcher](https://pub.dev/packages/url_launcher)</li>
+ <li>[dynamic_theme](https://pub.dev/packages/dynamic_theme)</li>
+ <li>[google_fonts](https://pub.dev/packages/google_fonts)</li>
+ </ul>
 
 ## Screenshot
 <img src="./Screenshot/NewsRecital.jpg" >
