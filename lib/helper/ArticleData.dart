@@ -57,7 +57,7 @@ class _ArticleDataState extends State<ArticleData> {
                           borderRadius: BorderRadius.circular(10.0),
                           child: Image(
                               image: NetworkImage(
-                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpRknF9IAeIQ2QCUaQ9JdQWoJUVUMVhXetvA&usqp=CAU')),
+                                  'https://cdn.pixabay.com/photo/2017/05/13/17/03/the-gap-message-2310064_1280.jpg')),
                         )
                       : ClipRRect(
                           borderRadius: BorderRadius.circular(10.0),
@@ -101,7 +101,9 @@ class _ArticleDataState extends State<ArticleData> {
                           child: (widget.data[index]['publishedAt'] == null)
                               ? CircularProgressIndicator()
                               : Text(
-                                  "🕓 " + formatter.format(DateTime.parse(widget.data[index]['publishedAt'])),
+                                  "🕓 " +
+                                      formatter.format(DateTime.parse(
+                                          widget.data[index]['publishedAt'])),
                                   style: TextStyle(
                                     fontSize: 14,
                                   ),
