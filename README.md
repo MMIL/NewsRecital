@@ -64,7 +64,7 @@ Submitting changes:
 5. `git push origin name_of_your_branch`
 
 To send a pull request:
-1. `git pull-request` (if you are using [Hub](https://hub.github.com/)) or go to https://github.com/MMIL/NewsRecital and click the "Compare & pull request" button
+1. `git pull-request` (if you are using [Hub](https://hub.github.com/)) or go to [NewsRecital](https://github.com/MMIL/NewsRecital) and click the "Compare & pull request" button
 2. Tag the relevant people and GitHub issue (if any)
 
 ## News API Credit
