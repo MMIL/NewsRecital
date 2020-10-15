@@ -21,14 +21,18 @@ An app that gives you the latest news from the top sources . It is built using F
 * Go to detail news website.
 
 ## Dependencies
-* [Flutter](https://flutter.io/)
-* [News API](https://newsapi.org/)
-* [http](https://pub.dev/packages/http)
-* [Flutter InAppWebView Plugin](https://pub.dev/packages/flutter_inappwebview)
-* [Text To Speech](https://pub.dev/packages/flutter_tts)
-* [url_launcher](https://pub.dev/packages/url_launcher)
-* [dynamic_theme](https://pub.dev/packages/dynamic_theme)
-* [google_fonts](https://pub.dev/packages/google_fonts)
+<ul>
+ <li><a href="https://flutter.io/"><img src ="https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png" width="100" height="25" ></a></li>
+ <li><a href="https://newsapi.org/"><img src ="https://s3.amazonaws.com/appforest_uf/f1479799611909x580051703844219400/news_api_logo.PNG" width="100" height="50" ></a></li>
+  <li><a href="https://pub.dev/packages/http"><img src ="https://pub.dev/static/img/dart-logo-400x400.png" width="50" height="50" ></a></li>
+ <li><a href="https://pub.dev/packages/flutter_inappwebview"><img src ="https://miro.medium.com/max/400/1*_6Dh7jYd1Rh4GjFymFUA8w.png" width="50" height="50" ></a></li>
+ <li><a href="https://pub.dev/packages/flutter_tts"><img src ="https://www.easytechtrick.org/wp-content/uploads/2017/11/Text-To-Speech-Apps.jpg" width="70" height="50" ></a></li>
+ <li> <h4> <a href="https://pub.dev/packages/url_launcher"  style =" text-decoration: none;">URL LAUNCHER</a></h4></li>
+ <li><h4><a href="https://pub.dev/packages/dynamic_theme" style =" text-decoration: none;">Dynamic Theme</a></h4></li>
+ 
+ 
+ <li><a href="https://pub.dev/packages/google_fonts"><img src ="https://www.gstatic.com/images/icons/material/apps/fonts/1x/opengraph_color_blue_1200dp.png" width="100" height="50" ></a></li>
+ </ul>
 
 ## Screenshot
 <img src="./Screenshot/NewsRecital.jpg" >
@@ -44,7 +48,7 @@ An app that gives you the latest news from the top sources . It is built using F
 * A little knowledge of Dart and Flutter
 
 
-Please feel free to file issues at https://github.com/MMIL/NewsRecital/issues. Flutter issues can be filed at https://github.com/flutter/flutter/issues.
+Please feel free to file issues at [NewsRecital issues](https://github.com/MMIL/NewsRecital/issues). Flutter issues can be filed at [Flutter issues](https://github.com/flutter/flutter/issues).
 
 You can also contribute changes. Setting up:
 1. Fork `https://github.com/MMIL/NewsRecital.git` into your own GitHub account
@@ -60,7 +64,7 @@ Submitting changes:
 5. `git push origin name_of_your_branch`
 
 To send a pull request:
-1. `git pull-request` (if you are using [Hub](https://hub.github.com/)) or go to https://github.com/MMIL/NewsRecital and click the "Compare & pull request" button
+1. `git pull-request` (if you are using [Hub](https://hub.github.com/)) or go to [NewsRecital](https://github.com/MMIL/NewsRecital) and click the "Compare & pull request" button
 2. Tag the relevant people and GitHub issue (if any)
 
 ## News API Credit
