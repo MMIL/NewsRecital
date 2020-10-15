@@ -95,6 +95,8 @@ class _ArticleDataState extends State<ArticleData> {
                     height: 5,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
                     children: <Widget>[
                       Container(
                           alignment: Alignment.centerLeft,
@@ -113,7 +115,10 @@ class _ArticleDataState extends State<ArticleData> {
                           : Text(
                               " " + widget.data[index]['source']['name'],
                               style: TextStyle(
-                                color: Colors.black54,
+                                color: Theme.of(context).brightness ==
+                                        Brightness.light
+                                    ? Colors.black54
+                                    : Colors.white54,
                                 fontSize: 14,
                               ),
                             )
