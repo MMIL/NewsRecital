@@ -95,13 +95,17 @@ class _ArticleDataState extends State<ArticleData> {
                     height: 5,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
                     children: <Widget>[
                       Container(
                           alignment: Alignment.centerLeft,
                           child: (widget.data[index]['publishedAt'] == null)
                               ? CircularProgressIndicator()
                               : Text(
-                                  "🕓 " + formatter.format(DateTime.parse(widget.data[index]['publishedAt'])),
+                                  "🕓 " +
+                                      formatter.format(DateTime.parse(
+                                          widget.data[index]['publishedAt'])),
                                   style: TextStyle(
                                     fontSize: 14,
                                   ),
@@ -111,7 +115,10 @@ class _ArticleDataState extends State<ArticleData> {
                           : Text(
                               " " + widget.data[index]['source']['name'],
                               style: TextStyle(
-                                color: Colors.black54,
+                                color: Theme.of(context).brightness ==
+                                        Brightness.light
+                                    ? Colors.black54
+                                    : Colors.white54,
                                 fontSize: 14,
                               ),
                             )

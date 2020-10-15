@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:news_retic/views/Bussiness.dart';
 import 'package:news_retic/views/Entertainment.dart';
+import 'package:news_retic/views/General.dart';
 import 'package:news_retic/views/Health.dart';
 import 'package:news_retic/views/India.dart';
 import 'package:news_retic/views/Science.dart';
@@ -29,7 +30,7 @@ class _HomePageState extends State<HomePage>
   int index;
   @override
   void initState() {
-    controller = new TabController(length: 8, vsync: this);
+    controller = new TabController(length: 9, vsync: this);
     super.initState();
   }
 
@@ -43,6 +44,9 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Theme.of(context).brightness == Brightness.light
+              ? Colors.white
+              : Colors.black,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -56,6 +60,9 @@ class _HomePageState extends State<HomePage>
                 icon: Icon(
                   Icons.brightness_6_sharp,
                   size: 25,
+                  color: Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : Colors.white,
                 ),
               ),
             ],
@@ -66,15 +73,20 @@ class _HomePageState extends State<HomePage>
             isScrollable: true,
             indicatorColor: Colors.deepPurple,
             indicatorSize: TabBarIndicatorSize.label,
+            labelColor: Theme.of(context).brightness == Brightness.light
+                ? Colors.black
+                : Colors.white,
             labelStyle: GoogleFonts.openSansCondensed(
               textStyle: TextStyle(
-                  letterSpacing: .4,
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.w600),
+                letterSpacing: .4,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             tabs: <Widget>[
               Tab(text: "Explore"),
               Tab(text: "World"),
+              Tab(text: "General"),
               Tab(text: "Business"),
               Tab(text: "Entertainment"),
               Tab(text: "Technology"),
@@ -89,6 +101,7 @@ class _HomePageState extends State<HomePage>
           children: <Widget>[
             India(),
             World(),
+            General(),
             Bussiness(),
             Entertainment(),
             Technology(),
@@ -136,7 +149,9 @@ class WidgetTitle extends StatelessWidget {
                   style: GoogleFonts.lobster(
                     textStyle: TextStyle(
                         fontSize: 24.0,
-                        color: Colors.black,
+                        color: Theme.of(context).brightness == Brightness.light
+                            ? Colors.black
+                            : Colors.white,
                         fontWeight: FontWeight.w500),
                   ),
                 ),
@@ -146,7 +161,9 @@ class WidgetTitle extends StatelessWidget {
                     textStyle: TextStyle(
                         // letterSpacing: .3,
                         fontSize: 14.0,
-                        color: Colors.black54,
+                        color: Theme.of(context).brightness == Brightness.light
+                            ? Colors.black54
+                            : Colors.white54,
                         fontWeight: FontWeight.w500),
                   ),
                 ),
